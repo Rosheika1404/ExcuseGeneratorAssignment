@@ -9,5 +9,9 @@ function generateExcuse(){
     let whatIndex = Math.floor(Math.random() * what.length);
     let whenIndex = Math.floor(Math.random() * when.length);
 
-    return who[whoIndex] + " " + action[actionIndex] + " " + what[whatIndex] + " " + when[whenIndex];
+    return who[whoIndex] + " " + action[actionIndex] + " " + what[whatIndex] + " " + when[whenIndex] + ".";
+  }
+
+  function myFunction(){
+    document.querySelector(".excuse").innerHTML = generateExcuse();
   }
